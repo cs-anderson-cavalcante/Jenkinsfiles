@@ -31,7 +31,7 @@ stage('CodePull'){ //nome do job a ser criado
 stage('Build'){
       agent any
       steps{
-        dir('build-android'){
+        dir('android'){
           sh '''
             source $HOME/.bash_profile
 
