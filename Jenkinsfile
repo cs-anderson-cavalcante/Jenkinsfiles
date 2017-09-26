@@ -19,7 +19,7 @@ stage('CodePull'){ //nome do job a ser criado
                   userRemoteConfigs:
                   [[
                     credentialsId: 'a5f973d2-a275-4dad-beaf-f8574b9c3e95', //ID da credential criada para o user no jenkins
-                    url: 'https://github.com/cs-anderson-cavalcante/poynt' // repositorio que buscaremos o jenkins
+                    url: 'https://github.com/cs-anderson-cavalcante/poynt.git' // repositorio que buscaremos o jenkins
                       depth: 1,
                       noTags: false,
                       reference: '',
