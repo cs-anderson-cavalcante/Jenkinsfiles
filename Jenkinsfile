@@ -4,9 +4,8 @@ pipeline {
 stage('CodePull'){ //nome do job a ser criado
   steps{
     dir ('android'){ //criar ou entrar no diretorio, se exister ele entra, se nao, ele cria
-
       checkout([$class: 'GitSCM',
-                  branches: [[name: 'dev']], //branch a ser usada
+                  branches: [[name: 'master']], //branch a ser usada
                   doGenerateSubmoduleConfigurations: false,
                   extensions:
                   [[
