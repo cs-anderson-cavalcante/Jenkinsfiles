@@ -24,7 +24,7 @@ stage('CodePull'){ //nome do job a ser criado
       }
     }
   }
- }
+
 //Sempre que clonar um projeto, setar no DIR qual a pasta que iremos clonar.
 
 stage('Build'){
@@ -39,3 +39,4 @@ stage('Build'){
       }
     }
   }
+}
