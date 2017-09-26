@@ -33,9 +33,6 @@ stage('Build'){
       steps{
         dir('android'){
           sh '''
-            source $HOME/.bash_profile
-
-            # Compila o app
             ./gradlew clean
             ./gradlew assmbleDebug
           '''
