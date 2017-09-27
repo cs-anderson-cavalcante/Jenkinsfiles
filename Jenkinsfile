@@ -32,7 +32,7 @@ stage('Build'){
       steps{
         dir('android'){
           sh '''
-          source $HOME/.zshrc
+          source $HOME/.bash_profile
             ./gradlew assembleDebug
           '''
         }
